@@ -1,0 +1,243 @@
+/* =============================================
+-------------Common CSS Rules for body---------
+=============================================== */
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.fency-button{
+  padding: 12px 36px;
+  border-radius: 33px;
+  background: #21B573;
+  color: #FFF;
+  border: none;
+}
+.fency-button:hover{
+  transform: scaleX(1.1);
+  transition: 700ms;
+}
+
+/* =============================================
+---------------Header Section CSS Rules---------
+=============================================== */
+
+.logo{
+  width: 200px;
+  height: 60px;
+}
+
+.navbar-nav .nav-link{
+  font-weight: 700;
+  color: #000 !important;
+}
+.navbar-nav .nav-link.active{
+  width: 104px;
+  height: 43px;
+  padding: 12px 28px;
+  border-radius: 33px;
+  background: #21B573;
+  color: #FFF !important; 
+  text-align: center;
+}
+
+.lightgreen-background{
+  padding: 10px;
+  margin-bottom: 100px;
+  background-color: #F0FFF0;
+}
+
+.red-highlight{
+  color: #FD511A;
+}
+
+.heading{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.green-highlight{
+  color: #21B573;
+}
+
+/* =============================================
+---------------Info Section CSS Rules----------
+=============================================== */
+
+.info-container{
+  width: 270px;
+  height: 270px;
+  background-color: #F8FFFB;
+  border-radius: 10px;
+}
+.info-image{
+  width: 80px;
+  height: 83px;
+}
+.info-container:hover{
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* =============================================
+---------------Course Section CSS Rules---------
+=============================================== */
+
+.card{
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+.card-title{
+  font-size: 24px;
+  font-weight: 700;
+}
+.icon{
+  width: 24px;
+  height: 24px;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition: 1200ms;
+}
+
+/* ===============================================
+----------Testimonial Section CSS Rules-----------
+================================================= */
+
+.testimonial-image{
+  width: 120px;
+  height: 120px;
+}
+
+/* =========================================
+-----------Contact US CSS Rule--------------
+============================================ */
+.input-group-text{
+  background-color: #21B573;
+  border: none;
+  color: #FFF;
+}
+
+.send-button{
+  width: 100%;
+  padding: 12px 36px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #21B573;
+  color: #FFF;
+  border: none;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #21B573;
+}
+.border{
+  width: 150px;
+  height: 10px;
+  background-color: #21B573;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* ===============================================
+-------------Footer Section CSS Rules-------------
+================================================= */
+
+.footer-background{
+  background-color: #282531;
+  color: #FFF;
+}
+footer ul{
+  list-style: none;
+}
+footer ul li a{
+  text-decoration: none;
+  color: #FFF;
+}
+footer ul li a:hover{
+  text-decoration: none;
+  color: #21B573;
+}
+
+.copy-right-text{
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ==============================================
+-----------CSS rules for Responsive ----------
+=================================================*/
+
+@media (max-width: 576px) { 
+
+  /* =============================================
+  --------CSS Rules for responsive Navbar--------
+  =============================================== */
+  .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
+  
+  /* =============================================
+  --------CSS Rules for responsive banner--------
+  =============================================== */
+
+  .mobile-banner{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-content p{
+    margin-top: 15px;
+  }
+  .mobile-content h1{
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+    /* ===================================================
+  --------CSS Rules for responsive Info Section--------
+  ========================================================= */
+
+  .info-container{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+   /* ======================================================
+  --------CSS Rules for responsive Testimonial Section------
+  ========================================================== */
+
+  .mobile-testimonial{
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-testimonial p{
+    margin-top: 15px;
+    padding-left: 0px;
+  }
+
+     /* ======================================================
+  --------CSS Rules for responsive Footer Section------
+  ========================================================== */
+  .footer-description{
+    text-align: center;
+  }
+  footer ul li{
+    text-align: center;
+    margin-left: -35px;
+  }
+}
